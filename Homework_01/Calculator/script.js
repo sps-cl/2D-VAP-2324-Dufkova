@@ -22,7 +22,7 @@ appendNumber(number){
 chooseOperantion(operantion){
     if(this.currentOperand === '') return
     if(this.previousOperand !== ''){
-        this.compute()
+        this.compute();
     }
     this.operantion = operantion;
     this.previousOperand = this.currentOperand;
