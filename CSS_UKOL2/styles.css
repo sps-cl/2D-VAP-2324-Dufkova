@@ -1,0 +1,43 @@
+.inline-container, .inline-block-container, .block-container,.flex-container{
+    border:black solid 1px;
+}
+.inline-div{
+    display: inline;
+    background-color: rgb(10, 9, 9);
+}
+.inline-block-div{
+    display:inline-block;
+    background-color: rgb(235, 40, 34);
+}
+.block-div{
+    display:block;
+    background-color: green;
+}
+.flex-div{
+    background-color: aqua;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.inline-div, .inline-block-div, .block-div, .flex-div{
+    width: 100px;
+    height: 100px;
+    margin: 20px; /*odsazení*/
+    text-align: center;
+    color: rgb(49, 42, 42);
+    font-family: monospace;
+    font-size: 2rem;
+    transition: background-color, 3s;
+    animation-name: Animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.inline-div:hover, .inline-block-div:hover, .block-div:hover,.flex-div:hover{
+    background-color: blueviolet;
+}
+@keyframes Animation{
+    0% {width: 100px;} /*začátek animace*/
+    100% {width: 200px;} /*konec animace*/
+}
